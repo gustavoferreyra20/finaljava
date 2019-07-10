@@ -6,6 +6,7 @@
 package formularios;
 import java.util.*;
 import javax.swing.*;
+
 /**
  *
  * @author Equipo
@@ -28,7 +29,6 @@ public class form2 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -45,22 +45,15 @@ public class form2 extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
+        jLabel12 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jButton2.setBackground(new java.awt.Color(247, 205, 61));
-        jButton2.setFont(new java.awt.Font("Star Trek Future ", 0, 36)); // NOI18N
-        jButton2.setText("instrucciones");
-        jButton2.setBorder(null);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         jButton1.setBackground(new java.awt.Color(247, 205, 61));
         jButton1.setFont(new java.awt.Font("Star Trek Future ", 0, 36)); // NOI18N
         jButton1.setText("volver");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -69,10 +62,10 @@ public class form2 extends javax.swing.JFrame {
 
         jButton3.setBackground(new java.awt.Color(247, 205, 61));
         jButton3.setFont(new java.awt.Font("Star Trek Future ", 0, 36)); // NOI18N
-        jButton3.setText("listo");
+        jButton3.setText("jugar");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -88,7 +81,7 @@ public class form2 extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/lagarto.png"))); // NOI18N
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/spock_1.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/spock.png"))); // NOI18N
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/tijera.png"))); // NOI18N
 
@@ -104,187 +97,316 @@ public class form2 extends javax.swing.JFrame {
         jLabel10.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
         jLabel10.setText("Oponente:");
 
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
         jTextField2.setEditable(false);
+        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField2ActionPerformed(evt);
+            }
+        });
 
         jTextField3.setEditable(false);
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setBackground(new java.awt.Color(247, 205, 61));
+        jButton4.setFont(new java.awt.Font("Star Trek Future ", 0, 36)); // NOI18N
+        jButton4.setText("siguiente tirada");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo2.jpg"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel4)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(14, 14, 14)
+                .addComponent(jLabel1))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel6))
+                .addGap(16, 16, 16)
+                .addComponent(jLabel5)
+                .addGap(171, 171, 171)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1))
+                        .addGap(88, 88, 88)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jLabel1)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addGap(13, 13, 13)
-                                                .addComponent(jLabel3)))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(137, 137, 137)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel8)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel10)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel9)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(0, 96, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jLabel6)
-                    .addContainerGap(508, Short.MAX_VALUE)))
+                        .addComponent(jLabel10)
+                        .addGap(23, 23, 23)
+                        .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(181, 181, 181)
+                .addComponent(jButton4)
+                .addGap(198, 198, 198)
+                .addComponent(jButton1))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel4))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(500, 500, 500)
+                .addComponent(jLabel9))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(500, 500, 500)
+                .addComponent(jLabel7))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(500, 500, 500)
+                .addComponent(jLabel8))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(198, 198, 198)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 800, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel7))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(11, 11, 11)
+                .addComponent(jLabel1)
+                .addGap(19, 19, 19)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2))
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel2)
+                        .addGap(6, 6, 6)
+                        .addComponent(jLabel6))
+                    .addComponent(jLabel5)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel8)
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel9)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel10)
+                        .addGap(52, 52, 52)
+                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel10))
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(142, 142, 142)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel5)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(392, Short.MAX_VALUE)
-                    .addComponent(jLabel6)
-                    .addGap(381, 381, 381)))
+                .addGap(215, 215, 215)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4)
+                    .addComponent(jButton1)))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(457, 457, 457)
+                .addComponent(jLabel4))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(284, 284, 284)
+                .addComponent(jLabel9))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(12, 12, 12)
+                .addComponent(jLabel7))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(243, 243, 243)
+                .addComponent(jLabel8))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 750, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        form3 f3=new form3();
-        f3.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       form1 f1=new form1();
+        form1 f1=new form1();
         f1.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
-        int k,tj,to,jp,op;
-        String res,a;
+int k,tj,to,jp,op,n;
+        String res,gn;
         String [] num= new String [3];
         Random rnd=new Random();
-
+        
+               
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-
-        do{
+     if ( !jTextField1.getText().equals ("")){
             jp=0;
             op=0;
-            if ( !jTextField1.getText().equals ("")){
-            for(k=0;k<3||jp==2||op==2;k++){
-        to=rnd.nextInt(5)+1;
-        tj=Integer.parseInt(jTextField1.getText());
-        jLabel11.setIcon(new ImageIcon(getClass().getResource("/img/"+to+".png"))); 
-        switch(tj){
-            case 1:
-                if(to==4||to==3){
-                jp++;
+                    to=rnd.nextInt(5)+1;
+                    tj=Integer.parseInt(jTextField1.getText());
+                    jLabel11.setIcon(new ImageIcon(getClass().getResource("/img/"+to+".png")));
+                    if(tj==0||tj>5){
+                        JOptionPane.showMessageDialog(null, "numero invalido");
+                        jButton3.setEnabled(false);
+                    }else if(to!=tj){
+                    switch(tj){
+                        case 1:
+                        if(to==4||to==3){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 2:
+                        if(to==5||to==1){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 3:
+                        if(to==4||to==2){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 4:
+                        if(to==5||to==2){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 5:
+                        if(to==1||to==3){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                    }
+                    }
+                    System.out.println("jp"+jp+"op"+op);
+    jTextField2.setText(""+jp);
+    jTextField3.setText(""+op);
+    
+            jButton3.setEnabled(false);
+            jButton4.setEnabled(true);
+            jTextField1.setText(""); 
                 }else{
-                    op++;
-                };
-                break;
-            case 2:
-                if(to==5||to==1){
-                jp++;
-                }else{
-                    op++;
-                };
-                break;
-            case 3:
-                if(to==4||to==2){
-                jp++;
-                }else{
-                    op++;
-                };
-                break;
-            case 4:
-                if(to==5||to==2){
-                jp++;
-                }else{
-                    op++;
-                };
-                break;
-            case 5:
-                if(to==1||to==3){
-                jp++;
-                }else{
-                    op++;
-                };
-                break;
-        }
-        System.out.println("jp"+jp+"op"+op);
-        a="0";
-        tj=Integer.parseInt("");
-        jTextField2.setText(a+jp);
-        jTextField3.setText(a+op);
-        }
-        
-        }else{
-            JOptionPane.showMessageDialog(null, "Ingrese numero");   
-        }
-        res=JOptionPane.showInputDialog(null, "Quiere seguir jugando?");
-        }while(res.equalsIgnoreCase("si"));
-        
-        
-        
+                JOptionPane.showMessageDialog(null, "Ingrese numero");
+            }
+
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+
+
+       if ( !jTextField1.getText().equals ("")){
+           do{
+           if(jp<2&&op<2){
+                  to=rnd.nextInt(5)+1;
+                    tj=Integer.parseInt(jTextField1.getText());
+                    jLabel11.setIcon(new ImageIcon(getClass().getResource("/img/"+to+".png")));
+                    if(tj==0||tj>5){
+                        JOptionPane.showMessageDialog(null, "numero invalido");
+                        jButton3.setEnabled(false);
+                    }else if(to!=tj){
+                    switch(tj){
+                        case 1:
+                        if(to==4||to==3){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 2:
+                        if(to==5||to==1){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 3:
+                        if(to==4||to==2){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 4:
+                        if(to==5||to==2){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                        case 5:
+                        if(to==1||to==3){
+                            jp++;
+                        }else{
+                            op++;
+                        };
+                        break;
+                    }
+                    }
+                    System.out.println("jp"+jp+"op"+op);
+    jTextField2.setText(""+jp);
+    jTextField3.setText(""+op);
+    
+            jButton3.setEnabled(false);
+            jButton4.setEnabled(true);
+            jTextField1.setText(""); 
+            jButton4.setEnabled(true);
+            res="si";
+              if(op==2){
+               gn="oponente";
+           }else if(jp==2){
+               gn="jugador";
+           }
+    
+           }else{
+               jp=0;
+               op=0;
+               jButton3.setEnabled(true);
+            jButton4.setEnabled(false);
+           
+            System.out.println(gn);
+            JOptionPane.showMessageDialog(null, "Ganador:"+gn);
+            res=JOptionPane.showInputDialog("Quiere seguir jugando?");
+           
+           }
+
+        }while(res.equalsIgnoreCase("si")); 
+           if(!res.equals("si")){
+                    form1 f1=new form1();
+        f1.setVisible(true);
+        this.dispose();
+                
+                }
+          }else{
+           
+                JOptionPane.showMessageDialog(null,"Ingrese numero");
+                
+  
+       }
+               
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
+
+    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -323,11 +445,12 @@ public class form2 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
